@@ -39,15 +39,24 @@ java -cp target/classes/ javaanalyzer.Driver -input input/simple/ -output output
 
 ### Design Requirements
 
+Following are the required design elements for your solution. You may have additional classes and methods, but a significant deduction will be applied to solutions that do not meet all of the following requirements.
+
 1. :warning: You may not use `ArrayList` or any other data structure from the `Collections` library for any portion of this program. You may only use the array data structure.
 2. :warning: You may not use any of the methods of `java.util.Arrays`, including `Arrays.sort`. All sorting the in this program must be implemented by you.
+3. As you process each file, its statistics must be stored in a custom object called `ClassInfo`. A `ClassInfo` object maintains data members that store the filename, classname, total number of lines in the file, and total number of non-comment lines in the file. A new instance of this class is created for every individual Java file. You will need to decide which methods are appropriate for this class and where it should be instantiated.
+4. You must implement a class `FilesInfo` that maintains the entire list of `ClassInfo` objects. The `FilesInfo` object will be instantiated before you start processing the Java files. For each Java file processed, a new `ClassInfo` object will be created and added to the `FilesInfo` object. The `FilesInfo` class must contain at least the following methods:
+  - `constructor` - takes no input and instantiates two arrays. The first array stores the list of `ClassInfo` objects and the second array stores a list of `String` where each `String` represents an invalid class.
+  - `addClassInfo` - takes as input a `ClassInfo` object and stores it *in sorted order* in the array of `ClassInfo` objects. Note, if the array is full it must be resized to accommodate the new object. The array must remain sorted at all times. `ClassInfo` objects are sorted by the total lines of the class from least to greatest.
+  - `addInvalidFile` - takes as input a `String` and stores it *in sorted order* in the array of `String` objects. Note, if the array is full it must be resized to accommodate the new object. The array must remain sorted at all times. `String` objects are sorted in alphabetical order.
+  - `saveToFile` - takes as input a `String` representing an output file name and saves a `String` representation of the `FilesInfo` to the specified file. The output directory must be created if it does not exist. The method returns `true` if successful and `false` otherwise.
+  - Additional methods may be added to `FilesInfo`. My solution has a `toString` method, methods to resize the arrays, and helper methods to find the total SLOC for all files and the non-comment SLOC for all files.
 
 
 ### Hints
 
 When processing a single .java class file, you will need to go through the file line by line, counting both every line in the file, and every line that is not a comment line.  So, for the following file:
 
-```
+```java
 public class Test
 {
    public int Q;
@@ -62,7 +71,6 @@ public class Test
    }
 } 
 ```
-
 The line count would be 13 (since there are a total of 13 lines in the file), and the number of lines excluding comments would be 9.
 
 If this class were defined in a file named `Test.java` it would be considered *valid*. If the file name were anything else the class would be *invalid*.

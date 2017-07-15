@@ -1,0 +1,29 @@
+Valid Classes - Total: 8
+Class: NameTester [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/NameTester.java]
+	SLOC: 10
+	SLOC (without comments): 10
+Class: PersonTester [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/PersonTester.java]
+	SLOC: 21
+	SLOC (without comments): 13
+Class: Faculty [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/Faculty.java]
+	SLOC: 32
+	SLOC (without comments): 24
+Class: USFDatabase [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/USFDatabase.java]
+	SLOC: 51
+	SLOC (without comments): 30
+Class: Student [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/Student.java]
+	SLOC: 56
+	SLOC (without comments): 36
+Class: Name [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/Name.java]
+	SLOC: 60
+	SLOC (without comments): 51
+Class: USFPerson [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/USFPerson.java]
+	SLOC: 65
+	SLOC (without comments): 39
+Class: ComparableExample [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/complex/ComparableExample.java]
+	SLOC: 71
+	SLOC (without comments): 31
+Total SLOC: 366
+Total SLOC (without comments): 234
+Invalid Classes:
+Viewable.java

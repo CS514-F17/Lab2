@@ -1,8 +1,8 @@
 Lab 2 - Java Class Analyzer
 ==============================
 
-### Functionality Deadline: TBD
-### Final Deadline: TBD
+### Functionality Deadline: Monday, September 25, 2017, 5pm
+### Final Deadline: Sunday, October 15, 2017, 5pm
 
 *This lab description is subject to change until officially assigned.*
 
@@ -89,7 +89,7 @@ Remember that there *may* be import statements, package statements or comments a
 
 | Points | Criterion |
 | ------ | -------- |  
-| 30 | JavaAnalyzerErrorTest |
+| 30 | JavaAnalyzerTest |
 | 30 | JavaAnalyzerErrorTest-testSimple | 
 | 15 | JavaAnalyzerErrorTest-testComplex | 
 | 10 | `ClassInfo` and `FilesInfo` Design Requirement | 

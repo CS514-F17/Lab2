@@ -1,14 +1,14 @@
 Valid Classes - Total: 4
-Class: SingleLine [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/simple/SingleLine.java]
+Class: SingleLine [SingleLine.java]
 	SLOC: 14
 	SLOC (without comments): 12
-Class: MultiLine [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/simple/MultiLine.java]
+Class: MultiLine [MultiLine.java]
 	SLOC: 17
 	SLOC (without comments): 11
-Class: LeadingComments [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/simple/LeadingComments.java]
+Class: LeadingComments [LeadingComments.java]
 	SLOC: 22
 	SLOC (without comments): 11
-Class: PackageAndImports [/Users/srollins/teaching/cs514/lab-solutions/Lab2/input/simple/PackageAndImports.java]
+Class: PackageAndImports [PackageAndImports.java]
 	SLOC: 23
 	SLOC (without comments): 16
 Total SLOC: 76

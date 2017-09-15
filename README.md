@@ -4,8 +4,6 @@ Lab 2 - Java Class Analyzer
 ### Functionality Deadline: Monday, September 25, 2017, 5pm
 ### Final Deadline: Sunday, October 15, 2017, 5pm
 
-*This lab description is subject to change until officially assigned.*
-
 The goal of this project is to implement a program that analyzes the Java files in a given directory. You will use the following features:
 
 - Object-oriented Design

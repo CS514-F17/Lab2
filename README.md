@@ -87,9 +87,9 @@ Remember that there *may* be import statements, package statements or comments a
 
 | Points | Criterion |
 | ------ | -------- |  
-| 30 | JavaAnalyzerTest |
-| 30 | JavaAnalyzerErrorTest-testSimple | 
-| 15 | JavaAnalyzerErrorTest-testComplex | 
+| 30 | JavaAnalyzerErrorTest |
+| 30 | JavaAnalyzerTest-testSimple | 
+| 15 | JavaAnalyzerTest-testComplex | 
 | 10 | `ClassInfo` and `FilesInfo` Design Requirement | 
 | 15 | Design |
 
